@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Digital storage</title>
+</head>
+<body>
+   <div class="container">
+       <div class="main">
+            <div class="jumbotron">
+                <h1 class="text-uppercase text-center">Digital storage</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select id="sectionFrom" class="form-control">
+                            <option selected>--From--</option>
+                            <option value="bit">Bit</option>
+                            <option value="byte">Byte</option>
+                            <option value="megabyte">Megabyte</option>
+                            <option value="gigabyte">Gigabyte</option>
+                            <option value="terabyte">Terabyte</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                         <select id="sectionTo" class="form-control">
+                             <option selected>--To--</option>
+                             <option value="bit">Bit</option>
+                             <option value="byte">Byte</option>
+                             <option value="megabyte">Megabyte</option>
+                             <option value="gigabyte">Gigabyte</option>
+                             <option value="terabyte">Terabyte</option>
+                         </select>
+                     </div>
+                     <div class="col-md-12 mt-3">
+                         <input id="value" type="number" class="form-control" placeholder="Enter Value">
+                     </div>
+                     <div class="col-md-12 mt-3">
+                          <input id="output" type="text" class="form-control bg-info text-white output" readonly>
+                     </div>
+                 </div>
+            </div>
+       </div>
+   </div>
+    
+
+<script src="dist/js/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>
